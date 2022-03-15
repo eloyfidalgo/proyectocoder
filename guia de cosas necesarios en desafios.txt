@@ -1,0 +1,111 @@
+desafios:
+wireframe y estructura del proyecto
+agregando css a nuestro html
+primera entrega del proyecto:
+	wireframe de todas las paginas para mobile y desktop
+	html con uso de etiquetas contenedoras
+		uso de etiquetas multimedia
+		uso de etiquetas de texto
+	css
+		con modificadores de texto
+		con modificadores de colores
+		con listas
+		con box modeling
+		uso de tag semanticos
+sin flexbox
+
+Desafio para 08/03
+	aplicar grids
+	flexbox en una pagina del sitio
+	generar que el index y una pagina mas a eleccion del proyecto sea totalmente
+responsiva usando grids para el layout
+	flexbox para los componentes
+	box modeling para terminar de acomodar los elementos
+	usar media queries
+
+Recomendacions: 
+	en el html generar estructura de grid-contenedor-padre y grid-item-hijo para poder trabajar desde el css con grid-area.
+	dentro de esos grid-item-hijo debemos agregar etiquetas para generar los  componentes (ej: nav-footer-content-etc) a los cuales acomodaremos aplicando flexbox.
+	si es necesario aplicamos box modeling para terminar de acomodar y generar nuestro layout completo para la vista desktop.
+	deberas repetir este proceso pero dentro de una media querie mobile.
+
+
+Desafio para 08/03
+	Generar que todo nuestro proyecto sea totalmente responve para desktop y mobile.
+	Usando grids para el layout,
+	flexbox para los componentes
+	box modeling para terminar de acomodar los elementos.
+	usar media queries
+
+.........................................
+
+Anotaciones:
+*Back up del menu original de proyecto:
+
+.menu li>a{
+    background-color: black;
+    color: whitesmoke;
+    padding: 14px;
+    margin-top: 20px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    min-width: 200px;
+    width:100%;
+
+}
+.menu li>a:hover{
+    color:black;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+
+li{
+    display: inline-block;
+    width: 10%;
+    position: relative;
+    font-size: 15px;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+
+ul ul li{
+    display:block;
+}
+
+
+ul li:hover ul{
+    display: block;
+}
+
+
+TABLA ORIGINAL QUE TENIA BANDERAS en proyecto:
+
+
+         <table>  
+                        <tr>  
+                        <td> <a href="./pages/paises.html" src="./banderas/Argentina.jfif" alt="argentina"> </td>  
+                        <td> <img src="./banderas/brasilflag.jpg" alt= "brasil">  </td>   
+                        <td> <img src="./banderas/chile.png" alt=" bandera Chile"> </td>
+                        <td> <img src="./banderas/colombia.jpeg" alt= "bandera Colombia">  </td> 
+                        <td> <img src="./banderas/ecuador.png" alt="bandera Ecuador">  </td>
+                        <td> <img src="./banderas/peru.png" alt="bandera peru"> </td>
+                        <td> <img src="./banderas/uruguay.png" alt="bandera uruguay"> </td>
+                        <td> <img src="./banderas/mexico.png alt="bandera mexico"> </td>  
+                        </tr>
+                        <tr>   
+                        <td> <a href="/Pages/paises.html"> </a><p> ARGENTINA</p></td>   
+                        <td> <a href="/Pages/paises.html"></a><p>BRASIL</p></td>   
+                        <td><a href="/pages/paises.html"> </a><p>CHILE</p></td>
+                        <td><a href="/pages/paises.html"> </a><p>COLOMBIA</p></td>
+                        <td><a href="/pages/paises.html"> </a><p>ECUADOR</p></td>
+                        <td><a href="/pages/paises.html"> </a><p>PERU</p></td>
+                        <td><a href="/pages/paises.html"> </a><p>URUGUAY</p></td>
+                        <td><a href="/pages/paises.html"> </a><p>MEXICO</p></td>
+        
+                        </tr> 
+                     </table>

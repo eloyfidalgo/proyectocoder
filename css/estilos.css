@@ -1,0 +1,231 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+#main-wrapper{
+    min-height: 100vh;
+    position: absolute;
+}
+body{
+    background-color:black;
+    color: aliceblue;
+}
+header{
+    position:relative;
+    display:inline-block;
+    margin-top: 32px;
+}
+.logo{
+    max-width: 100%;
+    height: 70px;
+    opacity:0.6;
+    margin-right: 15px;
+    padding-left:85px;
+    margin-bottom: 20px;
+}
+
+.home{
+    max-width: 100%;
+    height: 50px;
+    padding-left: 280px;
+}
+nav {
+    background-color: rgb(27, 41, 121);
+    width: 100%;
+    padding-left: 10px;
+    height: 6rem;
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: 3px ;
+    margin-right: 200px;
+}
+nav ul{
+    float:center;
+    display:flex;
+}
+nav ul li{
+    float:center;
+    list-style: none;
+    position:relative;
+}
+nav ul li a{
+    display:block;
+    padding: 0 2rem;
+    line-height: 5rem;
+    color:white;
+    text-decoration: none;
+}
+nav ul li ul{
+    display: none;
+    position:absolute;
+    background-color: black;
+}
+nav ul li:hover ul{
+    display:block;   
+
+}
+nav ul li ul li a{
+    padding: 1rem 2rem;
+    line-height: unset;
+    white-space:nowrap ;
+}
+nav ul li ul li a:hover{
+    background-color: whitesmoke;
+    color: black;
+}    
+main{
+    width:100%;
+    margin: 10px auto 0;
+    padding-bottom: 400px;
+}
+
+main:after{
+    content: "";
+    height: 10px;
+}
+
+#logo{
+    display: flex;
+    align-items: right;
+    justify-content: center;
+ }
+ #logo img {
+    max-width: 50%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    border: 5px solid white;
+}
+.apertura{
+    text-align: center;
+    font-family:'Josefin Sans', sans-serif;
+    color: gold;
+    font-size: 10pt;
+    letter-spacing:2.5px ;  
+}
+h1, h2{
+    font-family: 'Hubballi'
+}
+h1.corto{
+    font-size: 30pt;
+    text-align: center;
+    letter-spacing: 10px;
+    line-height: 2.5;
+}
+h2.pais{
+    font-size: 20pt;
+    text-align: center;
+    line-height: 2.5;
+}
+.pais{
+    text-align: center;
+    letter-spacing: 5px;
+}
+.bloqueBanderas{
+    width: 90%;
+    margin: 1px auto;
+    padding-left: 50px;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0 ;
+    gap: 1000px auto;
+
+}
+.banderas{
+    max-width: 100%;
+    height: 125px;
+    padding: 18px;
+    justify-content: space-around;
+    border-radius: 30px 30px 30px 30px;
+    cursor:pointer;
+    transition: 0.5s ease-in-out;
+}
+.banderas:hover{
+    opacity: 0.4;
+}
+h2.categorias{
+    font-family:'Hubballi';
+    text-align: center;
+    letter-spacing: 5px;
+    line-height: 3;
+}
+.bloqueCategorias{
+    max-width: 100%;
+    margin-right: 33%;
+    padding: 10px;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 5px auto;
+   
+}
+.img1,.img2,.img3,.img4{
+    height: 220px;
+    margin-left: 133px;
+}
+.img1:hover{
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+.img2:hover{
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+.img3:hover{
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+.img4:hover{
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+h2.anio{
+    font-family:'Hubballi';
+    text-align: center;
+    margin-left: 13px;
+    letter-spacing: 5px;
+    line-height: 3;
+}
+.fecha{
+    font-family:'Hubballi';
+    text-align: right;
+    font-size: 60pt;
+    text-decoration: none;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    
+}
+
+#footer{
+    background-color: black;
+    padding: 20px 0;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.logoFooter{
+    height: 50px;
+    opacity: 0.2;
+}
+
+p.txtFooter{
+    font-family:'Hubballi';
+    opacity: 0.2;   
+}
+
+
+
+@media only screen and (min-width: 480px){
+    .logo{
+        position:left}
+    .bloqueBanderas{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+       
+    
+        display:flex;
+    }
+}
+
